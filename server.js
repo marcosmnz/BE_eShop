@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use('/api/users', require('./Routes/usersRoutes'));
 app.use('/api/products', require('./Routes/productsRoute'));
+app.use('/api/orders', require('./Routes/ordersRoute'));
 
 //error handler here :)
 app.use(errorHandler)
